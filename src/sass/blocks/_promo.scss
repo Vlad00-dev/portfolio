@@ -24,9 +24,15 @@
         color: #000000;
         font-weight: 700;
         cursor: pointer;
+        transition: all 0.3s;
         &:hover {
             color: #000000;
             text-decoration: none;
+            transform: scale(1.1);
+            background: #e69705;
+            &:nth-child(2) {
+                background: none;
+            }
         }
     }
 }
