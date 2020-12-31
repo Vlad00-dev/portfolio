@@ -22,6 +22,35 @@
             }
         }
     }
+    .resume {
+        &__wrapper {
+            padding: 50px 30px 0 30px;
+            grid-template-columns:repeat(2, 320px);
+            column-gap: 120px;
+            justify-content: center;
+        }
+        .divider {
+            margin-top: 20px;
+        }
+    }
+    .skills {
+        &__wrapper {
+            padding-top: 50px;
+            grid-template-columns: repeat(3, 270px);
+            grid-template-rows: repeat(3, minmax(270px, auto));
+            grid-auto-rows: minmax(270px, auto);
+            justify-content: center;
+            gap: 13px;
+        }
+        &__ratings {
+            grid-template-columns: repeat(2, 350px);
+            grid-template-rows: repeat(3, minmax(70px, auto));
+            grid-auto-rows: minmax(70px, auto);
+            column-gap: 45px;
+            row-gap: 50px;
+            justify-content: center;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -44,6 +73,50 @@
                 grid-template-columns: 40px 320px;
                 column-gap: 20px;
             }
+        }
+    }
+    .resume {
+        &__wrapper {
+            padding: 50px 20px 0 20px;
+            grid-template-columns:repeat(2, 320px);
+            column-gap: 65px;
+            justify-content: center;
+        }
+        &__column {
+            &-title {
+                margin-bottom: 0;
+            }
+            ul {
+                li {
+                    &:after {
+                        height: calc(95% + 16px);
+                        top: -8px;
+                    }
+                }
+            }
+        }
+        &__item {
+            &:before {
+                top: 48px;
+            }
+            &-head {
+                padding: 30px 0 0 100px;
+            }
+            &-icon {
+                top: 31px;
+            }
+        }
+    }
+    .skills {
+        &__wrapper {
+            padding-top: 40px;
+            grid-template-columns: repeat(2, 270px);
+            grid-auto-rows: minmax(270px, auto);
+            justify-content: center;
+            gap: 30px;
+        }
+        &__ratings {
+            column-gap: 30px;
         }
     }
 }
@@ -78,6 +151,27 @@
                 grid-template-columns: 40px 200px;
                 column-gap: 15px;
             }
+        }
+    }
+    .resume {
+        &__wrapper {
+            padding: 35px 35px 0 35px;
+            grid-template-columns: 425px;
+            grid-template-rows: repeat(2, auto);
+            row-gap: 35px;
+            grid-auto-rows: auto;
+        }
+    }
+    .skills {
+        &__wrapper {
+            gap: 13px;
+        }
+        &__ratings {
+            padding-top: 65px;
+            grid-template-columns: 350px;
+            grid-template-rows: repeat(6, minmax(70px, auto));
+            grid-auto-rows: minmax(70px, auto);
+            row-gap: 70px;
         }
     }
 }
@@ -115,6 +209,50 @@
         }
         &__skills {
             grid-template-columns: 1fr;
+        }
+    }
+    .resume {
+        padding-top: 90px;
+        h2 {
+            margin-bottom: 20px;
+        }
+        .title {
+            &_fz36 {
+                font-size: 24px;
+            }
+            &__section-subtitle {
+                line-height: 36px;
+            }
+        }
+        .divider {
+            margin-top: 15px;
+        }
+        &__wrapper {
+            padding: 35px 20px 0 20px;
+            grid-template-columns: 280px;
+            grid-template-rows: repeat(2, auto);
+            row-gap: 40px;
+            grid-auto-rows: auto;
+        }
+    }
+    .skills {
+        .title {
+            &_fz36 {
+                font-size: 24px;
+            }
+            &__section-subtitle {
+                line-height: 36px;
+            }
+        }
+        &__wrapper {
+            padding-top: 20px;
+            grid-template-columns: repeat(1, 270px);
+            gap: 20px;
+        }
+        &__ratings {
+            padding-top: 65px;
+            grid-template-columns: 300px;
+            row-gap: 40px;
         }
     }
 }
